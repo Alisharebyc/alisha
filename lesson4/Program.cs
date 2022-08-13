@@ -1,16 +1,16 @@
-﻿//Напишите программу, которая принимает на вход три числа и 
-//выдает максимальное из этих чисел.
-//2, 3, 7 -> 7
-//44, 5, 78 -> 78
-//22, 3, 9 -> 22
+﻿// Напишите программу, которая на вход принимает число и выдает, 
+//является ли число четным ( делится ли оно на два без остатка).
+//4 -> да 
+//-3 -> нет 
+//7 -> нет
 
-Console.WriteLine("Введите три целых числа: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
-int number2 = Convert.ToInt32(Console.ReadLine());
-int number3 = Convert.ToInt32(Console.ReadLine());
-
-int max = number1;
-if(number2 > max) Console.WriteLine(max = number2);
-if (number3 > max) Console.WriteLine(max = number3);
-Console.Write("Максимальное число равно ");
-Console.WriteLine(max);
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+if(number % 2 == 0)
+{
+    Console.WriteLine("Это число четное");
+}
+else
+{
+    Console.WriteLine("Это число не четное");
+}
